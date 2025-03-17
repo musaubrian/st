@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Iosevka Medium:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -96,32 +96,33 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#1C2023", /* black (base00) */
-	"#C79595", /* red3 (base0F) */
-	"#95C7AE", /* green3 (base0B) */
-	"#C7C795", /* yellow3 (base09) */
-	"#95AEC7", /* blue2 (base0C) */
-	"#C795AE", /* magenta3 (base0E) */
-	"#95C7AE", /* cyan3 (base0B again, or could use base0C) */
-	"#C7CCD1", /* gray90 (base05) */
+	"#2a2e33", /* black */
+	"#b84d51", /* red */
+	"#b3bf5a", /* green */
+	"#e4b55e", /* yellow */
+	"#6e90b0", /* blue */
+	"#a17eac", /* magenta */
+	"#7fbfb4", /* cyan */
+	"#b5b9b6", /* white */
 
 	/* 8 bright colors */
-	"#747C84", /* gray50 (base03) */
-	"#C7AE95", /* red (base08) */
-	"#AEC795", /* green (base0A) */
-	"#C7C795", /* yellow (base09 again) */
-	"#95AEC7", /* #5c5cff (base0C again) */
-	"#AE95C7", /* magenta (base0D) */
-	"#95AEC7", /* cyan (base0C again) */
-	"#F3F4F5", /* white (base07) */
+	"#1d1f22", /* bright black */
+	"#8d2e32", /* bright red */
+	"#798431", /* bright green */
+	"#e58a50", /* bright yellow */
+	"#4b6b88", /* bright blue */
+	"#6e5079", /* bright magenta */
+	"#4d7b74", /* bright cyan */
+	"#5a626a", /* bright white */
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#ADB3BA", /* #cccccc (base04) */
-	"#393F45", /* #555555 (base01) */
-	"#C7CCD1", /* default foreground color (base05) */
-	"#171717", /* default background color */};
+	"#ADB3BA",
+	"#393F45",
+	"#b7bcba", /* default foreground color */
+	"#171717", /* default background color */
+};
 
 
 /*
