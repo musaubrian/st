@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Iosevka Medium:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Iosevka:pixelsize=17:antialias=true:autohint=false";
 static int borderpx = 2;
 
 /*
@@ -119,7 +119,6 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#ADB3BA",
-	"#393F45",
 	"#b7bcba", /* default foreground color */
 	"#171717", /* default background color */
 };
