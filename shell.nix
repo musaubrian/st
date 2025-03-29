@@ -4,9 +4,13 @@ pkgs.mkShell {
     xorg.libX11
     xorg.libXft
     pkg-config
-    # packages here
+    gnupatch
+    harfbuzz
   ];
   shellHook = ''
     # exported variables maybe...
+
+    # patch -p1 < patches/boxdraw.diff
+    # patch -p1 < patches/ligatures.diff
   '';
 }
